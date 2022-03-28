@@ -28,12 +28,75 @@
             <img src="img/UF1290.png" width="800" />
         </article>
         <article>
-            
             <h2>UF1291</h2>
             <p>Examen modulo UF1291</p>
             <img src="img/UF1291.png" width="800" />
-
         </article>
+        <article>
+            <h2>Clases</h2>
+            <p>
+                ///////////////////////////////////////////////////clase padre /////////////////////////////////////////////////////////////////
+                class Mueble{                                             // Creamos la clase Mueble
+                    //////////////////////////////////propiedades///////////////////////////////////////////
+                    #precioBase;                                                     // propiedad privada
+                    #color;                                                          // propiedad privada
+                    peso;                                                           // propiedad
+                    consumoEnergetico;                                              // propiedad
+                    /////////////////////////////////constructor//////////////////////////////////////////////
+                    constructor(precioBase,color,peso,consumoEnergetico) {          // Creamos el constructor
+                        this.#precioBase=precioBase;                                 // designamos la propiedad
+                        this.#color=color;                                           // designamos la propiedad
+                        this.peso=peso;                                             // designamos la propiedad
+                        this.consumoEnergetico=consumoEnergetico;                   // designamos la propiedad
+                    }                                                               // cerramos el constructor
+                    /////////////////////////////////setters y getters////////////////////////////////////////////
+                    set setPrecioBase(precioBase) {                                 // declaramos el set de precioBase
+                        this.precioBase=precioBase;                                 // designamos precioBase al nuevo precioBase
+                    }                                                               // cerramos set
+                    set setColor(color) {                                           // declaramos el set de setcolor
+                        this.color=color;                                           // designamos color al nuevo color
+                    }                                                               // cerramos set
+                    set setPeso(peso) {                                             // declaramos el set de setpeso
+                        this.peso=peso;                                             // designamos color al nuevo color
+                    }                                                               // cerramos set
+                    set setConsumoEnergetico(consumoEnergetico) {                   // declaramos el set de consumoEnergetico
+                        this.consumoEnergetico=consumoEnergetico;                   // designamos consumoEnergetico al nuevo consumoEnergetico
+                    }                                                               // cerramos set
+                    get getPrecioBase() {                                           // declaramos get precioBase
+                       return this.precioBase;
+                    }                                                               // cerramos get
+                    get getcolor() {                                                // declaramos get color
+                        return this.color
+                    }                                                               // cerramos get
+                    get getpeso() {                                                 // declaramos get peso
+                            return this.peso
+                    }                                                               // cerramos get
+                    get getConsumoEnergetico() {                                    // declaramos get consumoEnergetico
+                            return this.consumoEnergetico
+                    }                                                               // cerramos get
+                }                                                                   // termina la clase
+                ///////////////////////////////////////////////////fin clase padre/////////////////////////////////////////////////////////////
+                
+                //////////////////////////////////////////////////clase hijo///////////////////////////////////////////////////////////////////
+                class Mesa extends Mueble {                           // declaramos clase  heredera de Mueble
+                    #carga;                                                          // declaramos la nueva propiedad privada
+                    ////////////////////////////////////////////constructor/////////////////////////////////////////
+                    constructor(precioBase,color,peso,consumoEnergetico,carga){     // declaramos el constructor
+                        super(precioBase,color,peso,consumoEnergetico);             // Llamamos el constructor padre
+                        this.#carga=carga;                                           // Asignamos la nueva propiedad
+                    }                                                               // cerramos constructor
+                    /////////////////////////////////setters y getters////////////////////////////////////////////
+                    set setcarga(carga) {                                           // declaramos el set carga
+                        this.carga=carga;                                           // designamos carga a nueva carga
+                    }                                                               // cerramos set
+                    get getcarga() {                                                // declaramos el get carga
+                        
+                    }                                                               // cerramos get
+                }                                                                   // termina la clase
+                //////////////////////////////////////////////////////fin clase hijo///////////////////////////////////////////////////////////
+            </p>
+        </article>
+
     </section>
     <footer>
         <section>
